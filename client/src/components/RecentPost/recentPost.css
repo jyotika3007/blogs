@@ -1,0 +1,46 @@
+.recentPost__container{
+	width: 33.33%;
+	/*border: 1px solid black;*/
+	margin: 1%;
+}
+
+.recentPost__images{
+	background: url('/public/images/post2.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 175px; 
+}
+
+.recentPost__info{
+	color: #1a1919;
+    padding: 10px;
+    /*position: absolute;*/
+    bottom: 0;
+        /*background-color: #00000035;*/
+}
+
+.recentPost__info ul{
+	list-style-type: none;
+}
+
+.recentPost__info ul li{
+	float: left;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.recentPost__course{
+	/*background-color: orange;*/
+	padding: 2px 10px;
+	color: #ffffff;
+}
+
+.recentPost__info h1{
+	font-size: 16px;
+
+}
+
+.recentPost__info h1:hover{
+	text-decoration: underline;
+}
+

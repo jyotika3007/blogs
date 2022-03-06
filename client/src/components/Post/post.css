@@ -1,0 +1,48 @@
+.post__container{
+	width: 48%;
+    margin: 1%;
+    border: 1px solid lightgray;
+	background: url('/public/images/post1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    /*display: flex;*/
+}
+
+.post__container:hover{
+	opacity: 0.95;
+}
+
+.post__info{
+	color: #ffffff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+        background-color: #00000035;
+}
+
+.post__info ul{
+	list-style-type: none;
+}
+
+.post__info ul li{
+	float: left;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+.post__course{
+	background-color: orange;
+	padding: 2px 10px;
+}
+
+.post__info h1{
+	font-size: 20px;
+}
+
+.post__info h1:hover{
+	text-decoration: underline;
+}

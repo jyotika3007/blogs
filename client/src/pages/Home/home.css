@@ -1,0 +1,38 @@
+.home__container{
+	width: 80%;
+	margin: auto;
+}
+.home__posts{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+
+.web__design{
+	background-color: #0fbf0f;
+}
+
+.javascript{
+	background-color: orange;
+}
+
+.css{
+	background-color: #1ea2e1;
+}
+
+.jquery{
+	background-color: #cb0ecb;
+}
+
+.home__row{
+	display: flex;
+	width: 100%;
+	margin-bottom: 45px;
+}
+
+.home__mostRead, .home__featured, .home__categories{
+	width: 33%;
+	margin-right: 25px;
+}

@@ -1,0 +1,26 @@
+.mostReadPost__container{
+	display: flex;
+	margin-bottom: 25px;
+}
+
+.mostReadPost__imageDiv{
+	width: 100px;
+	height: 100%;
+}
+.mostReadPost__imageDiv img {
+	max-height: 100px;
+    max-width: 100px;
+
+}
+
+.mostReadPost__info h4{
+	margin: 0!important;
+	padding: 0 10px;
+	font-weight: 400;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.mostReadPost__info h4:hover{
+	text-decoration: underline;
+}

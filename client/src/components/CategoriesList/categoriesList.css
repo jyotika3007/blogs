@@ -1,0 +1,36 @@
+.categories__container{
+	display: flex;
+	flex-direction: column;
+}
+
+.categories__container ul{
+	margin: 10px 25px;
+}
+
+.categories__list, .categories__count{
+	list-style-type: none;
+}
+
+.categories__list li {
+	float: left;
+    background-color: #242222;
+    color: #fff;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding: 2px 5px;
+	cursor: pointer;
+}
+
+.categories__count li{
+	border-bottom: 1px solid lightgray;
+	padding: 10px 5px;
+	cursor: pointer;
+}
+
+.categories__count li>span{
+	float: right;
+	padding:  3px 10px;
+	color: #fff;
+	border-radius: 3px;
+}
+

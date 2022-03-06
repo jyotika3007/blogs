@@ -1,0 +1,21 @@
+.footer{
+	width: 80%;
+	margin: auto;
+	border-top: 1px solid lightgray;
+	height: 300px;
+	display: flex;
+
+}
+
+.footer__logo{
+	width: 35%;
+}
+.footer__aboutUs{
+	width: 20%;
+}
+.footer__categories{
+	width: 20%;
+}
+.footer__newsletter{
+	width: 25%;
+}
