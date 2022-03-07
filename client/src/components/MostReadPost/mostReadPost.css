@@ -24,3 +24,8 @@
 .mostReadPost__info h4:hover{
 	text-decoration: underline;
 }
+
+.mostReadPost__info p{
+	text-align: justify;
+	font-size: 15px;
+}

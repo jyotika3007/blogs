@@ -27,7 +27,7 @@
 
     .singleBlog__row{
         display: flex;
-        width: 1300px;
+        width: 1200px;
         margin: auto;
         margin-bottom: 45px;
     }
@@ -91,7 +91,7 @@
     }
     
     .course__name{
-        color: #fff;
+        color: #fff !important;
     }
     
     .singleBlog__post .mostReadPost__info h4{
@@ -110,7 +110,7 @@
     
     .category_loadMore button{
         background-color: #212631;
-        color: #fff;
+        color: #fff !important;
         border: none;
         border-radius: 3px;
         padding: 10px 15px;
@@ -137,7 +137,7 @@
     .singleBlog__socialIcons ul li{
         padding: 12px;
         margin: 10px;
-        color: #c7c4c9bf !important;
+        color: #c7c4c9bf !important !important;
         border: 1px solid #fff;
         cursor: pointer;
     
@@ -178,7 +178,7 @@
     .singlePost__comment .MuiSvgIcon-root{
         font-size: 55px;
         padding: 5px;
-        color: gray;
+        color: gray !important;
         /* border: 1px solid gray; */
         border-radius: 50%;
         background-color: lightgrey;
@@ -190,14 +190,14 @@
 
     .singlePost__userInfo h4{
         margin: 0;
-        color: gray;
+        color: gray !important;
         font-size: 14px;
         font-weight: 200;
     }
 
     .singlePost__userInfo .singlePost__userName{
         margin: 0;
-        color: #000;
+        color: #000 !important;
         font-size: 16px;
         font-weight: 500;
         margin-bottom: 10px;
@@ -226,7 +226,7 @@
     }
 
     .singlePost__addReview p{
-        color: gray;
+        color: gray !important;
     }
 
     .singlePost__form{
@@ -240,7 +240,7 @@
     }
 
     .singlePost__formDiv label{
-        color: #302f2f;
+        color: #302f2f !important;
     }
 
     .singlePost__formDiv input{

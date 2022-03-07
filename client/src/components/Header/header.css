@@ -6,8 +6,9 @@
 
 .header__container{
 	display: flex;
-	width: 1300px;
-	margin: auto;	
+	width: 1200px;
+	margin: auto;
+	height: 75px;	
 }
 
 .header__name{
@@ -42,7 +43,7 @@
 }
 
 .header__navbar .web__design_underline:hover {
-	color: #0fbf0f;
+	color: #0fbf0f !important;
 }
 
 .header__navbar .javascript_underline{
@@ -51,7 +52,7 @@
 }
 
 .header__navbar .javascript_underline:hover {
-	color: orange;
+	color: orange !important;
 }
 
 .header__navbar .css_underline{
@@ -60,7 +61,7 @@
 }
 
 .header__navbar .css_underline:hover {
-	color: #1ea2e1;
+	color: #1ea2e1 !important;
 }
 
 .header__navbar .jquery_underline{
@@ -69,7 +70,7 @@
 }
 
 .header__navbar .jquery_underline:hover {
-	color: #cb0ecb;
+	color: #cb0ecb !important;
 }
 
 .header__icons{

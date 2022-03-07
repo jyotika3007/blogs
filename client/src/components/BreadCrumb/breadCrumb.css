@@ -1,8 +1,12 @@
 .breadCrumb{
-    padding: 45px 0;
+    padding: 25px 0;
 }
 
-.breadCrumb h4{
-    color: rgb(143, 141, 141);
+.breadCrumb h4, .breadCrumb h4>a{
+    color: rgb(143, 141, 141) !important;
     cursor: pointer;
+}
+
+.breadCrumb h4>a:hover{
+	color: gray !important;
 }

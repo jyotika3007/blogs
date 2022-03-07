@@ -27,10 +27,10 @@ function Header(argument) {
 					<ul>
 						<li>News</li>
 						<li>Popular</li>
-						<li className="web__design_underline"><Link to="/category">Web Desgin</Link></li>
-						<li className="javascript_underline"><Link to="/category">JavaScript</Link></li>
-						<li className="css_underline"><Link to="/category">Css</Link></li>
-						<li className="jquery_underline"><Link to="/category">JQuery</Link></li>
+						<li className="web__design_underline"><Link to="/category/web design">Web Desgin</Link></li>
+						<li className="javascript_underline"><Link to="/category/javascript">JavaScript</Link></li>
+						<li className="css_underline"><Link to="/category/css">Css</Link></li>
+						<li className="jquery_underline"><Link to="/category/jquery">JQuery</Link></li>
 					</ul>
 				</div>
 

@@ -14,7 +14,7 @@
 .categories__list li {
 	float: left;
     background-color: #242222;
-    color: #fff;
+    color: #fff  !important;
     margin-right: 5px;
     margin-bottom: 10px;
     padding: 2px 5px;

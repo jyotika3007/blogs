@@ -1,5 +1,5 @@
 .footer{
-	width: 1300px;
+	width: 1200px;
 	margin: auto;
 	/* border-top: 1px solid lightgray; */
 	height: 300px;
@@ -40,17 +40,18 @@
 
 .footer__logo ul li {
 	float: left;
-	color: rgb(138, 133, 133);
+	color: rgb(138, 133, 133) !important;
 	cursor: pointer;
 	padding-right: 10px;
 }
 
 .footer__logo ul li:hover {
-	color: #222;
+	color: #222 !important;
 }
 
-.footer__aboutUs ul li, .footer__categories ul li, .footer__newsletter ul li{
-	color: rgb(138, 133, 133);
+.footer__aboutUs ul li, .footer__categories ul li, .footer__newsletter ul li,
+.footer__aboutUs ul li a, .footer__categories ul li a, .footer__newsletter ul li a{
+	color: rgb(138, 133, 133) !important;
 	padding: 5px 2px;
 }
 
@@ -66,7 +67,7 @@
 	position: absolute;
     right: 0;
     margin-top: -31px;
-	color: rgb(138, 133, 133);
+	color: rgb(138, 133, 133) !important;
 	cursor: pointer;
 }
 
@@ -74,7 +75,7 @@
 	float: left;
 }
 .footer__icons li .MuiSvgIcon-root{
-	color: #fff;
+	color: #fff !important;
     background-color: rgb(199, 195, 195);
     margin-right: 5px;
     padding: 5px;

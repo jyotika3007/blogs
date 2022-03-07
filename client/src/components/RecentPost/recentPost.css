@@ -12,7 +12,7 @@
 }
 
 .recentPost__info{
-	color: #1a1919;
+	color: #1a1919 !important;
     padding: 10px;
     /*position: absolute;*/
     bottom: 0;
@@ -32,7 +32,7 @@
 .recentPost__course{
 	/*background-color: orange;*/
 	padding: 2px 10px;
-	color: #ffffff;
+	color: #ffffff !important;
 }
 
 .recentPost__info h1{

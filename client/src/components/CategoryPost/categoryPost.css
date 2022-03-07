@@ -18,7 +18,7 @@
 }
 
 .categoryPost__info{
-	color: #ffffff;
+	color: #ffffff  !important;
     /* padding: 10px; */
     position: absolute;
     width: 100%;
