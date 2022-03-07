@@ -25,14 +25,30 @@ function Home(argument) {
 					<h2>Recent Posts</h2>
 				</div>
 				<div className="home__posts">
-					<RecentPost />
-					<RecentPost />
-					<RecentPost />
+					<RecentPost course="javascript"/>
+					<RecentPost course="css"/>
+					<RecentPost course="jquery"/>
 				</div>
 				<div className="home__posts">
-					<RecentPost />
-					<RecentPost />
-					<RecentPost />
+					<RecentPost course="css"/>
+					<RecentPost course="jquery"/>
+					<RecentPost course="web__design"/>					
+				</div>
+			</div>
+
+			<div className="home__recentPost">
+				<div className="home__postHeading">
+					<h2>Featured Posts</h2>
+				</div>
+				<div className="home__posts">
+				<RecentPost course="javascript"/>
+					<RecentPost course="jquery"/>
+					<RecentPost course="web__design"/>	
+				</div>
+				<div className="home__posts">
+				<RecentPost course="css"/>
+					<RecentPost course="javascript"/>
+					<RecentPost course="jquery"/>
 				</div>
 			</div>
 

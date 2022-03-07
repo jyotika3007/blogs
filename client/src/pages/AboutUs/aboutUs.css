@@ -1,0 +1,13 @@
+.aboutUs__img{
+    width: 100%
+}
+
+.aboutUs_desc p{
+    line-height: 2;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.aboutUs__row{
+    margin-bottom: 125px;
+}

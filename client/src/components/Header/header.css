@@ -6,7 +6,7 @@
 
 .header__container{
 	display: flex;
-	width: 80%;
+	width: 1300px;
 	margin: auto;	
 }
 
@@ -38,7 +38,7 @@
 
 .header__navbar .web__design_underline{
 	border-bottom: 5px solid #0fbf0f;
-	padding: 25px 15px;
+	padding: 27px 15px;
 }
 
 .header__navbar .web__design_underline:hover {
@@ -47,7 +47,7 @@
 
 .header__navbar .javascript_underline{
 	border-bottom: 5px solid orange;
-	padding: 25px 15px;
+	padding: 27px 15px;
 }
 
 .header__navbar .javascript_underline:hover {
@@ -56,7 +56,7 @@
 
 .header__navbar .css_underline{
 	border-bottom: 5px solid #1ea2e1;
-	padding: 25px 15px;
+	padding: 27px 15px;
 }
 
 .header__navbar .css_underline:hover {
@@ -65,7 +65,7 @@
 
 .header__navbar .jquery_underline{
 	border-bottom: 5px solid #cb0ecb;
-	padding: 25px 15px;
+	padding: 27px 15px;
 }
 
 .header__navbar .jquery_underline:hover {
@@ -94,13 +94,13 @@
 .header__searchInput{
 	width: 100%;
 	background-color: #fff;
-	/*border: none;*/
-	border: 2px solid black;
+	border: none;
+	/* border: 2px solid black; */
 	border-radius: 3px;
 	font-size: 18px;
 	position: absolute;
 	top: -74px;
-	height: 80px;
+	height: 72px;
 }
 
 

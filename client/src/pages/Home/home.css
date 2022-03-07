@@ -1,5 +1,5 @@
 .home__container{
-	width: 80%;
+	width: 1300px;
 	margin: auto;
 }
 .home__posts{
@@ -12,18 +12,22 @@
 
 .web__design{
 	background-color: #0fbf0f;
+	text-transform: capitalize;
 }
 
 .javascript{
 	background-color: orange;
+	text-transform: capitalize;
 }
 
 .css{
 	background-color: #1ea2e1;
+	text-transform: capitalize;
 }
 
 .jquery{
 	background-color: #cb0ecb;
+	text-transform: capitalize;
 }
 
 .home__row{

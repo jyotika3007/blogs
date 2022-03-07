@@ -1,0 +1,92 @@
+.category__container{
+	width: 1300px;
+	margin: auto;
+}
+
+.category__row{
+    display: flex;
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.category__posts{
+	margin: auto;
+	/* display: flex; */
+    width: 70%;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+.category__adds{
+    width: 30%;
+}
+
+.category__mostRead, .category__categories, .category__archieve{
+    width: 100%;
+	margin-right: 25px;
+    padding: 0 45px 45px;
+
+}
+
+.category__archieve ul{
+    list-style-type: none;
+}
+
+.category__archieve ul li{
+    padding: 7px 0;
+}
+
+.category__container ul{
+    margin: 10px 0;
+}
+
+.category__post{
+    margin: 45px;
+}
+
+.category__post .mostReadPost__container{
+    margin-bottom: 45px;
+}
+
+.category__post .mostReadPost__imageDiv{
+    width: 40%;
+    height: auto;
+}
+
+
+.category__post .mostReadPost__imageDiv img{
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.category__post .mostReadPost__info{
+    width: 60%;
+    padding: 0 20px;
+}
+
+.category__post .mostReadPost__info ul{
+    list-style-type: none;
+    margin-top: 0;
+}
+.category__post .mostReadPost__info ul li{
+    float: left;
+    padding: 5px 10px;
+}
+
+.course__name{
+    color: #fff;
+}
+
+.category__post .mostReadPost__info h4{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.category__post .mostReadPost__info p{
+    font-size: 15px;
+}
+
+.category_loadMore {
+    display: flex;
+    justify-content: center;
+}

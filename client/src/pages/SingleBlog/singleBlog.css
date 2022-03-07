@@ -1,0 +1,260 @@
+.singleBlog__container .singleBlog__banner{
+    height: 350px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(/public/images/post1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #fff;
+}
+
+.singleBlog__container .singleBlog__banner .post__info{
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    bottom: 0;    
+}
+
+    .singleBlog__container .singleBlog__banner .post__info ul{
+        padding: 15px 15%;
+    }
+    
+    .singleBlog__container .singleBlog__banner .post__info h1{
+        padding: 15px 15%;
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    .singleBlog__row{
+        display: flex;
+        width: 1300px;
+        margin: auto;
+        margin-bottom: 45px;
+    }
+    
+    .singleBlog__posts{
+        margin: auto;
+        width: 70%;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    
+    .singleBlog__adds{
+        width: 30%;
+    }
+    
+    .singleBlog__mostRead, .singleBlog__categories, .singleBlog__archieve{
+        width: 100%;
+        margin-right: 25px;
+        padding: 0 45px 45px;
+        margin-top: 60px;    
+    }
+    
+    .singleBlog__archieve ul{
+        list-style-type: none;
+    }
+    
+    .singleBlog__archieve ul li{
+        padding: 7px 0;
+    }
+    
+    .singleBlog__container ul{
+        margin: 10px 0;
+    }
+    
+    .singleBlog__post{
+        margin: 45px;
+    }
+        
+    .singleBlog__post .mostReadPost__imageDiv{
+        width: 40%;
+        height: auto;
+    }
+        
+    .singleBlog__post .mostReadPost__imageDiv img{
+        max-width: 100%;
+        max-height: 200px;
+    }
+    
+    .singleBlog__post .mostReadPost__info{
+        width: 60%;
+        padding: 0 20px;
+    }
+    
+    .singleBlog__post .mostReadPost__info ul{
+        list-style-type: none;
+        margin-top: 0;
+    }
+    .singleBlog__post .mostReadPost__info ul li{
+        float: left;
+        padding: 5px 10px;
+    }
+    
+    .course__name{
+        color: #fff;
+    }
+    
+    .singleBlog__post .mostReadPost__info h4{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px 0;
+    }
+    .singleBlog__post .mostReadPost__info p{
+        font-size: 15px;
+    }
+    
+    .category_loadMore {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .category_loadMore button{
+        background-color: #212631;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 15px;
+        font-size: 16px; 
+        margin-top: 45px;
+    }
+    
+    .singleBlog__desc p{
+        text-align: justify;
+        line-height: 1.5;
+        font-weight: 100;
+    }
+   
+    .singleBlog__socialIcons{
+        margin-top: 45px;
+    }
+
+    .singleBlog__socialIcons ul{
+        list-style-type: none;
+        margin-top: 20px;
+        position: sticky;
+    }
+
+    .singleBlog__socialIcons ul li{
+        padding: 12px;
+        margin: 10px;
+        color: #c7c4c9bf !important;
+        border: 1px solid #fff;
+        cursor: pointer;
+    
+    }
+    
+    .singleBlog__socialIcons ul li:hover{
+        border-radius: 50%;
+        border: 1px solid #c7c4c9bf;
+    }
+    
+    .singlePost__reviews{
+        margin-top: 45px;
+    }
+
+    .singlePost__comments ul{
+        list-style-type: none;
+    }
+
+    .singlePost__commentChild li{
+        border-top: 1px solid #c5c1c147;
+        padding-top: 25px;
+    }
+    
+.singlePost__comments>ul>li{
+    border-bottom: 1px solid #c5c1c147;
+    margin-bottom: 20px
+}
+
+    .singlePost__commentChild{
+        margin: 3em  !important
+    }
+    
+    .singlePost__comment {
+        display: flex;
+        
+    }
+
+    .singlePost__comment .MuiSvgIcon-root{
+        font-size: 55px;
+        padding: 5px;
+        color: gray;
+        /* border: 1px solid gray; */
+        border-radius: 50%;
+        background-color: lightgrey;
+    }
+
+    .singlePost__userInfo{
+        padding: 0 20px;
+    }
+
+    .singlePost__userInfo h4{
+        margin: 0;
+        color: gray;
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    .singlePost__userInfo .singlePost__userName{
+        margin: 0;
+        color: #000;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .singlePost__userInfo p{
+        font-weight: 200;
+        margin-top: 10px;
+        line-height: 1.5;
+        font-size: 14px;;
+    }
+
+    .singlePost__comment button{
+        border: none;
+        margin-left: 45px;
+        cursor: pointer;
+        background-color: transparent;
+        
+    }
+    .singlePost__comment button:hover{
+        text-decoration: underline;
+    }
+
+    .singlePost__addReview{
+        margin-bottom: 125px;
+    }
+
+    .singlePost__addReview p{
+        color: gray;
+    }
+
+    .singlePost__form{
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    .singlePost__form .singlePost__formDiv{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .singlePost__formDiv label{
+        color: #302f2f;
+    }
+
+    .singlePost__formDiv input{
+        width: 90%;
+        border: 1px solid #c5c0c069;
+        margin: auto ;
+        padding: 7px;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+        .singlePost__formTextarea textarea{
+            border: 1px solid #c5c0c069;
+            font-size: 18px;
+            width: 96%;
+            padding: 1%;
+        }

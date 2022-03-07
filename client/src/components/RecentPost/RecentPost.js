@@ -1,13 +1,13 @@
 import React from 'react';
 import './recentPost.css';
 
-function RecentPost(){
+function RecentPost({course}){
 	return(
 		<div className="recentPost__container">
 			<div className="recentPost__images"></div>
 			<div className="recentPost__info">
 				<ul>
-					<li className="recentPost__course jquery">JQuery</li>
+					<li className={`recentPost__course ${course}`}>{course}</li>
 					<li>March 27,2022</li>
 				</ul>
 				<br/>

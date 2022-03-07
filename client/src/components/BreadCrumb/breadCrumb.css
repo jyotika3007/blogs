@@ -1,0 +1,8 @@
+.breadCrumb{
+    padding: 45px 0;
+}
+
+.breadCrumb h4{
+    color: rgb(143, 141, 141);
+    cursor: pointer;
+}

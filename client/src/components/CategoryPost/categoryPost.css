@@ -1,46 +1,50 @@
-.post__container{
-	width: 48%;
-    margin: 1%;
+
+.categoryPost{
+	width: 100%;
+    /* margin: 1%; */
     border: 1px solid lightgray;
-	background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url('/public/images/post1.webp');
+	background: url('/public/images/post1.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 500px;
     border-radius: 2px;
     cursor: pointer;
     position: relative;
+    /*display: flex;*/
 }
 
-.post__container:hover{
+.categoryPost:hover{
 	opacity: 0.95;
 }
 
-.post__info{
+.categoryPost__info{
 	color: #ffffff;
-    padding: 10px;
+    /* padding: 10px; */
     position: absolute;
+    width: 100%;
     bottom: 0;
+    background-color: #00000035;
 }
 
-.post__info ul{
+.categoryPost__info ul{
 	list-style-type: none;
 }
 
-.post__info ul li{
+.categoryPost__info ul li{
 	float: left;
 	margin-right: 10px;
 	font-weight: bold;
 }
 
-.post__course{
+.categoryPost__course{
 	background-color: orange;
 	padding: 2px 10px;
 }
 
-.post__info h1{
+.categoryPost__info h1{
 	font-size: 20px;
 }
 
-.post__info h1:hover{
+.categoryPost__info h1:hover{
 	text-decoration: underline;
 }

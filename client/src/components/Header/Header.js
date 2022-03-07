@@ -3,6 +3,7 @@ import './header.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
+import {Link} from 'react-router-dom';
 
 function Header(argument) {
 
@@ -17,17 +18,19 @@ function Header(argument) {
 		
 			<div className="header__container">
 				<div className="header__name">
+					<Link to="/">
 					<p>WEB<strong>MAG</strong></p>
+					</Link>
 				</div>
 
 				<div className="header__navbar">
 					<ul>
 						<li>News</li>
 						<li>Popular</li>
-						<li className="web__design_underline">Web Desgin</li>
-						<li className="javascript_underline">JavaScript</li>
-						<li className="css_underline">Css</li>
-						<li className="jquery_underline">JQuery</li>
+						<li className="web__design_underline"><Link to="/category">Web Desgin</Link></li>
+						<li className="javascript_underline"><Link to="/category">JavaScript</Link></li>
+						<li className="css_underline"><Link to="/category">Css</Link></li>
+						<li className="jquery_underline"><Link to="/category">JQuery</Link></li>
 					</ul>
 				</div>
 
