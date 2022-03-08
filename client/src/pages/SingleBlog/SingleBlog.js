@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import MostReadPost from '../../components/MostReadPost/MostReadPost';
+import ReadPost from '../../components/ReadPost/ReadPost';
 import CategoriesList from '../../components/CategoriesList/CategoriesList';
 import LeaveComment from '../../components/LeaveComment/LeaveComment';
 import Reviews from '../../components/Reviews/Reviews';
@@ -71,10 +71,10 @@ function SingleBlog(argument) {
                             <div className="singleBlog__postHeading">
                                 <h2>Most Read Posts</h2>
                             </div>
-                            <MostReadPost />
-                            <MostReadPost />
-                            <MostReadPost />
-                            <MostReadPost />
+                            <ReadPost />
+                            <ReadPost />
+                            <ReadPost />
+                            <ReadPost />
                         </div>
 
                         <div className="singleBlog__categories">

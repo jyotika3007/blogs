@@ -5,6 +5,8 @@ import Category from './pages/Category/Category';
 import SingleBlog from './pages/SingleBlog/SingleBlog';
 import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs/ContactUs';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Route path="/blog" element={<SingleBlog />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </Router>
     </>

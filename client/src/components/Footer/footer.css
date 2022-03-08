@@ -1,5 +1,5 @@
 .footer{
-	width: 1200px;
+	width: 80%;
 	margin: auto;
 	/* border-top: 1px solid lightgray; */
 	height: 300px;
@@ -89,4 +89,12 @@
 
 .footer__newletterInput{
 	position: relative;
+}
+
+
+
+@media screen and (max-width: 900px){
+	.footer{
+		width: 90%
+	}
 }

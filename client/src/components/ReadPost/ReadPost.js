@@ -1,7 +1,7 @@
 import React from 'react';
-import './mostReadPost.css';
+import './readPost.css';
 
-function MostReadPost({course,publish_date,desc}) {
+function ReadPost({course,publish_date,desc}) {
 	return (
 		<div className="mostReadPost__container">
 			<div className="mostReadPost__imageDiv">
@@ -27,4 +27,4 @@ function MostReadPost({course,publish_date,desc}) {
 		)
 }
 
-export default MostReadPost;
+export default ReadPost;

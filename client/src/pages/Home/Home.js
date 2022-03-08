@@ -3,8 +3,7 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import Post from '../../components/Post/Post';
 import RecentPost from '../../components/RecentPost/RecentPost';
-import MostReadPost from '../../components/MostReadPost/MostReadPost';
-import FeaturedPost from '../../components/FeaturedPost/FeaturedPost';
+import ReadPost from '../../components/ReadPost/ReadPost';
 import CategoriesList from '../../components/CategoriesList/CategoriesList';
 import './home.css';
 
@@ -41,12 +40,12 @@ function Home(argument) {
 					<h2>Featured Posts</h2>
 				</div>
 				<div className="home__posts">
-				<RecentPost course="javascript"/>
+					<RecentPost course="javascript"/>
 					<RecentPost course="jquery"/>
 					<RecentPost course="web__design"/>	
 				</div>
 				<div className="home__posts">
-				<RecentPost course="css"/>
+					<RecentPost course="css"/>
 					<RecentPost course="javascript"/>
 					<RecentPost course="jquery"/>
 				</div>
@@ -57,20 +56,20 @@ function Home(argument) {
 					<div className="home__postHeading">
 					<h2>Most Read Posts</h2>
 				</div>
-					<MostReadPost />
-					<MostReadPost />
-					<MostReadPost />
-					<MostReadPost />
+					<ReadPost />
+					<ReadPost />
+					<ReadPost />
+					<ReadPost />
 				</div>
 
 				<div className="home__featured">
 				<div className="home__postHeading">
 					<h2>Featured Posts</h2>
 				</div>
-					<FeaturedPost />
-					<FeaturedPost />
-					<FeaturedPost />
-					<FeaturedPost />
+					<ReadPost />
+					<ReadPost />
+					<ReadPost />
+					<ReadPost />
 				</div>
 
 				<div className="home__categories">

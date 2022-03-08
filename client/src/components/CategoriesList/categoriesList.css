@@ -27,7 +27,7 @@
 	cursor: pointer;
 }
 
-.categories__count li>span{
+.categories__count li span{
 	float: right;
 	padding:  3px 10px;
 	color: #fff;

@@ -6,14 +6,14 @@
 
 .header__container{
 	display: flex;
-	width: 1200px;
+	width: 80%;
 	margin: auto;
 	height: 75px;	
 }
 
 .header__name{
 	border-right: 1px solid lightgray;
-	width: 15%;
+	/* width: 15%; */
 }
 
 .header__container .header__name p{
@@ -22,7 +22,7 @@
 }
 
 .header__navbar{
-	width: 70%;
+	/* width: 70%; */
 }
 
 .header__navbar ul{
@@ -77,14 +77,15 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: end;
-	width: 30%;
+	/* width: 30%; */
+	margin-left: auto;
 }
 
 .header__icons .MuiSvgIcon-root{
-	font-size: 20px;
-	width: 15%;
-	padding: 27px 10px;
-	cursor: pointer;
+	font-size: 3rem;
+    width: 15%;
+    padding: 1rem;
+    cursor: pointer;
 }
 
 .header__searchBar{
@@ -110,4 +111,11 @@
     right: 0;
     top: -45px;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px){
+	.header__container{
+		width: 90%
+	}
 }

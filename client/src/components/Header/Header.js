@@ -8,6 +8,7 @@ import {Link} from 'react-router-dom';
 function Header(argument) {
 
 	const [isShowSearch,setSearchbar] = useState(false);
+	const [user,setUser] = useState('');
 
 	const handleSearchBar = () => {
 		setSearchbar(!isShowSearch);
@@ -25,12 +26,20 @@ function Header(argument) {
 
 				<div className="header__navbar">
 					<ul>
-						<li>News</li>
-						<li>Popular</li>
+						{/* <li>News</li> */}
+						{/* <li>Popular</li> */}
 						<li className="web__design_underline"><Link to="/category/web design">Web Desgin</Link></li>
 						<li className="javascript_underline"><Link to="/category/javascript">JavaScript</Link></li>
 						<li className="css_underline"><Link to="/category/css">Css</Link></li>
 						<li className="jquery_underline"><Link to="/category/jquery">JQuery</Link></li>
+						{!user ? 
+						<li>Login</li>
+						:
+						<React.Fragment>
+						<li>Account</li>
+						<li>Logout</li>
+						</React.Fragment>
+						}
 					</ul>
 				</div>
 

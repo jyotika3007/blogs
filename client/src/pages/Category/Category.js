@@ -3,7 +3,7 @@ import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import CategoryPost from '../../components/CategoryPost/CategoryPost';
 import BreadCrumb from '../../components/BreadCrumb/BreadCrumb';
-import MostReadPost from '../../components/MostReadPost/MostReadPost';
+import ReadPost from '../../components/ReadPost/ReadPost';
 import CategoriesList from '../../components/CategoriesList/CategoriesList';
 import './category.css';
 
@@ -21,10 +21,10 @@ function Category(argument) {
                         <CategoryPost />
 
                         <div className='category__post'>
-                            <MostReadPost course="javascript" publish_date="March 27, 2021" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
-                            <MostReadPost course="javascript" publish_date="March 27, 2021" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
-                            <MostReadPost course="javascript" publish_date="March 27, 2021" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
-                            <MostReadPost course="javascript" publish_date="March 27, 2021" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
+                            <ReadPost course="javascript" publish_date="March 27, 2021" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
+                            <ReadPost course="javascript" publish_date="March 27, 2021" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
+                            <ReadPost course="javascript" publish_date="March 27, 2021" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
+                            <ReadPost course="javascript" publish_date="March 27, 2021" desc="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book." />
                         </div>
                         <div className='category_loadMore'>
                             <button className='primary-button'>Load More </button>
@@ -36,10 +36,10 @@ function Category(argument) {
                             <div className="category__postHeading">
                                 <h2>Most Read Posts</h2>
                             </div>
-                            <MostReadPost />
-                            <MostReadPost />
-                            <MostReadPost />
-                            <MostReadPost />
+                            <ReadPost />
+                            <ReadPost />
+                            <ReadPost />
+                            <ReadPost />
                         </div>
 
                         <div className="category__categories">

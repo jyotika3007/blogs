@@ -1,5 +1,5 @@
 .home__container{
-	width: 1200px;
+	width: 80%;
 	margin: auto;
 }
 .home__posts{
@@ -39,4 +39,30 @@
 .home__mostRead, .home__featured, .home__categories{
 	width: 33%;
 	margin-right: 25px;
+}
+
+.home__postHeading>h2{
+	padding-left: 15px;
+}
+
+@media screen and (max-width: 900px){
+	.home__container{
+		width: 90%
+	}
+
+	.home__container>.home__posts{
+		display: block;
+	}
+	.post__container{
+		width: 100%;
+	}
+
+	.recentPost__container {
+		width: 96%;
+		/* border: 1px solid black; */
+		margin: auto;
+	}
+	.home__recentPost .home__posts{
+		display: table-cell;
+	}
 }

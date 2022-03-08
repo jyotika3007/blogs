@@ -1,9 +1,8 @@
 import React from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import CategoryPost from '../../components/CategoryPost/CategoryPost';
 import BreadCrumb from '../../components/BreadCrumb/BreadCrumb';
-import MostReadPost from '../../components/MostReadPost/MostReadPost';
+import ReadPost from '../../components/ReadPost/ReadPost';
 import CategoriesList from '../../components/CategoriesList/CategoriesList';
 import './aboutUs.css';
 
@@ -36,10 +35,10 @@ function AboutUs(argument) {
                             <div className="category__postHeading">
                                 <h2>Most Read Posts</h2>
                             </div>
-                            <MostReadPost />
-                            <MostReadPost />
-                            <MostReadPost />
-                            <MostReadPost />
+                            <ReadPost />
+                            <ReadPost />
+                            <ReadPost />
+                            <ReadPost />
                         </div>
 
                         <div className="category__categories">
