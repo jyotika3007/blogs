@@ -7,7 +7,8 @@ import AboutUs from './pages/AboutUs/AboutUs';
 import ContactUs from './pages/ContactUs/ContactUs';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Account from './pages/Account/Account';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/account" element={<Account />} />
         </Routes>
       </Router>
     </>

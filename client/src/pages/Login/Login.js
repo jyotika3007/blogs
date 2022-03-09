@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './login.css';
+import {Link} from 'react-router-dom';
 
 function Login(){
 
@@ -38,7 +39,7 @@ function Login(){
                 </div>
 
                 <div className="login__field login__div">
-                    <p>New User ? <strong>Create an account</strong></p>
+                    <p>New User ? <strong> <Link to="/register"> Create an account </Link> </strong></p>
                 </div>
 
             </form>

@@ -1,0 +1,25 @@
+.account__menu{
+    width: 20%;
+}
+
+.account__menu ul{
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    list-style-type: none;
+}
+.account__menu ul li{
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 3px
+}
+
+.account__menu ul li:hover{
+    /* font-size:18px; */
+    background-color:#e9e8e6;
+}
+
+.account__menu .active{
+    background-color: #e9e8e6;
+    
+}
+
