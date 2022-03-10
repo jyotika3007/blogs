@@ -2,3 +2,38 @@
     width: 80%;
     margin: auto;
 }
+
+.react-tabs{
+    display: flex;
+}
+
+.react-tabs__tab-list{
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    list-style-type: none;
+    width: 20%;
+}
+.react-tabs__tab-list li{
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 3px
+}
+
+.react-tabs__tab--selected,.react-tabs__tab-list li:hover{
+    /* font-size:18px; */
+    background-color:#e9e8e6;
+}
+
+.react-tabs__tab-list .active{
+    background-color: #e9e8e6;
+    
+}
+
+.react-tabs__tab-panel--selected{
+    width: 80%;
+    padding: 0 25px;
+}
+
+.users__post{
+    display: flex;
+}

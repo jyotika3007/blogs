@@ -1,0 +1,36 @@
+.profile__body{
+    display: flex;
+}
+.profile__form{
+    width: 65%;
+}
+.profile__pic{
+    width: 35%;
+    margin: auto;
+    text-align: center;
+}
+
+.profile__pic img{    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.prodicle__picUpdate {
+    display: flex;
+    justify-content: center;
+}
+.prodicle__picUpdate .MuiSvgIcon-root {
+    padding: 18px;
+}
+
+.profile__form input,.profile__form textarea{
+    width: 100%;
+    border: none;
+    background-color: #d3d3d37a;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 15px 5px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}

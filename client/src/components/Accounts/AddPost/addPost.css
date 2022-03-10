@@ -1,0 +1,37 @@
+.addPost__body{
+    /* display: flex; */
+}
+.addPost__form{
+    width: 100%;
+}
+.addPost__pic{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.addPost__pic img{    
+    /* width: 150px; */
+    height: 150px;
+    width: auto;
+    /* border-radius: 50%; */
+}
+
+.prodicle__picUpdate {
+    display: flex;
+    justify-content: center;
+}
+.prodicle__picUpdate .MuiSvgIcon-root {
+    padding: 18px;
+}
+
+.addPost__form input,.addPost__form textarea{
+    width: 100%;
+    border: none;
+    background-color: #d3d3d37a;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 15px 5px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
