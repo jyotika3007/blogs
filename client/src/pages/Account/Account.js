@@ -7,6 +7,7 @@ import BreadCrumb from '../../components/BreadCrumb/BreadCrumb';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Profile from '../../components/Accounts/Profile/Profile';
 import AddPost from '../../components/Accounts/AddPost/AddPost';
+import ResetPassword from '../../components/Accounts/ResetPassword/ResetPassword';
 
 export default function Account() {
   return (
@@ -52,16 +53,19 @@ export default function Account() {
             </TabPanel>
 
 
+            {/* Add New Post */}
             <TabPanel>
               <AddPost />
             </TabPanel>
 
 
+            {/* Reset User's Password */}
             <TabPanel>
-              <h2>Any content 4</h2>
+              <ResetPassword />
             </TabPanel>
 
 
+            {/* Logout */}
             <TabPanel>
               <h2>Any content 5</h2>
             </TabPanel>

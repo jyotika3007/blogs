@@ -34,12 +34,12 @@ function Header(argument) {
 						<li className="jquery_underline"><Link to="/category/jquery">JQuery</Link></li>
 						{!user ? 
 						<>
-						<li><Link to="login">Login</Link></li>
-						<li><Link to="register">Register</Link></li>
+						<li><Link to="/login">Login</Link></li>
+						<li><Link to="/register">Register</Link></li>
 						</>
 						:
 						<React.Fragment>
-						<li><Link to="login">Account</Link></li>
+						<li><Link to="/account">Account</Link></li>
 						<li>Logout</li>
 						</React.Fragment>
 						}
