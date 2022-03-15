@@ -1,14 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PhotoCameraIcon from '@mui/icons-material/PhotoCamera';
 import './addPost.css';
+import { createPost } from '../../../service/api';
 
 export default function Profile() {
+
+    const initialValues = {
+        title: '',
+        description: '',
+        blog_image: '',
+        user_id: '1',
+        tags: '',
+        category: 'All',
+        created_at: new Date()
+    } 
+
+    const [post,setPost] = useState(initialValues);
+
+    const handleChange = (e) => {
+        // console.log(e);
+        setPost({
+            ...post, [e.target.name]: e.target.value
+        });
+    }
+
+    const savePost = async(e) => {
+        e.preventDefault();
+        await createPost(post);
+        return false
+    }
+
     return (
         <div className='addPost__container'>
             <div className="addPost__body">
                 <h2>Add New Post</h2>
                 <div className='addPost__pic'>
-                    <img src="/images/post1.webp" alt="Profile Pic" />
+                    <img src="/images/post1.webp" alt="Blog Pic" />
                     <br />
                     <div className='prodicle__picUpdate'>
                         <form>
@@ -19,18 +46,18 @@ export default function Profile() {
                     </div>
                 </div>
                 <div className='addPost__form'>
-                    <form>
+                    <form onSubmit={e=>savePost(e)}>
                         <div className='form__div'>
                             <label>Title</label>
-                            <input type="text" placeholder='Enter Post Title Here ...' />
+                            <input type="text" name="title" onChange={e => handleChange(e)} placeholder='Enter Post Title Here ...' />
                         </div>
                         <div className='form__div'>
                             <label>#Tags</label>
-                            <input type="text" readOnly="readonly" placeholder='Use comma (,) as a separator ...' />
+                            <input type="text" name="tags" onChange={e => handleChange(e)} placeholder='Use comma (,) as a separator ...' />
                         </div>
                         <div className='form__div'>
                             <label>Description</label>
-                            <textarea rows="6" placeholder='Enter Post Description Here ...'></textarea>
+                            <textarea rows="6" name="description" onChange={e => handleChange(e)} placeholder='Enter Post Description Here ...'></textarea>
                         </div>
                         <div className='form__div'>
                             <button type="submit" className='primary-button'>Submit</button>
