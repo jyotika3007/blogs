@@ -11,3 +11,12 @@ const URL = 'http://localhost:8000'
             console.log('Error creating Post ', error)
         }
  }
+
+ export const getAllPosts = async() => {
+     try{
+         return await axios.post(`${URL}/get_posts`)
+        }
+        catch(error){
+            console.log('Error creating Post ', error)
+        }
+ }

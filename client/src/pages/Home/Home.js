@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import Post from '../../components/Post/Post';
@@ -6,8 +6,26 @@ import RecentPost from '../../components/RecentPost/RecentPost';
 import ReadPost from '../../components/ReadPost/ReadPost';
 import CategoriesList from '../../components/CategoriesList/CategoriesList';
 import './home.css';
+import { getAllPosts } from '../../service/api.js';
 
 function Home(argument) {
+const [recentPosts,setResentPosts] = useState([]);
+const [featuredPosts,setFeaturedPosts] = useState([]);
+
+useEffect(() => {
+	const fetchData = async()=>{
+		let postData = await getAllPosts();
+		// console.log(postData.data.data);
+		let data = postData.data.data
+		setResentPosts(data);
+	}
+
+	fetchData();
+
+	// console.log(recentPosts);
+
+},[])
+
 	return (
 		<div className="home">
 		<Header />
@@ -15,6 +33,7 @@ function Home(argument) {
 
 		<div className="home__container">
 			<div className="home__posts">
+				
 				<Post />
 				<Post />
 			</div>
@@ -24,9 +43,12 @@ function Home(argument) {
 					<h2>Recent Posts</h2>
 				</div>
 				<div className="home__posts">
-					<RecentPost course="javascript"/>
-					<RecentPost course="css"/>
-					<RecentPost course="jquery"/>
+				{recentPosts.map(post => (
+					// console.log(post)
+					<React.Fragment>
+					<RecentPost course="javascript" post={post}/>
+					</React.Fragment>
+				))}
 				</div>
 				<div className="home__posts">
 					<RecentPost course="css"/>

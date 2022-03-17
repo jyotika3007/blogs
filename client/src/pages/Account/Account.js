@@ -25,7 +25,7 @@ export default function Account() {
             <TabList>
               <Tab>Profile</Tab>
               <Tab>All Posts</Tab>
-              <Tab>Add Post</Tab>
+              <Tab>Create Post</Tab>
               <Tab>Reset Pasword</Tab>
               <Tab>Logout</Tab>
             </TabList>

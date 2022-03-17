@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import PhotoCameraIcon from '@mui/icons-material/PhotoCamera';
 import './addPost.css';
 import { createPost } from '../../../service/api';
+import { useNavigate} from 'react-router-dom';
 
 export default function Profile() {
 
+
+    const navigate = useNavigate();
     const initialValues = {
         title: '',
         description: '',
@@ -27,6 +30,7 @@ export default function Profile() {
     const savePost = async(e) => {
         e.preventDefault();
         await createPost(post);
+        navigate('/')
         return false
     }
 
