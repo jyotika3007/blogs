@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './account.css';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
@@ -8,8 +8,22 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Profile from '../../components/Accounts/Profile/Profile';
 import AddPost from '../../components/Accounts/AddPost/AddPost';
 import ResetPassword from '../../components/Accounts/ResetPassword/ResetPassword';
+import {getUsersPosts} from '../../service/api.js';
 
 export default function Account() {
+
+  const [myPosts, setMyPosts] = useState([]);
+
+  useEffect(()=>{
+    const fetchMyPosts = async() => {
+      let fetchData = getUsersPosts();
+      let data = fetchData.data.data;
+      console.log(data)
+      setMyPosts(data);  
+    }
+
+    fetchMyPosts();
+  }, [])
   return (
     <div className='account'>
       <Header />

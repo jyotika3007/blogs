@@ -1,7 +1,8 @@
 .recentPost__container{
-	width: 33.33%;
-	/*border: 1px solid black;*/
-	margin: 1%;
+	width: 32%;
+    /* border: 1px solid black; */
+    margin: 0.5%;
+    display: inline-block;
 }
 
 .recentPost__images{
@@ -37,7 +38,7 @@
 
 .recentPost__info h1{
 	font-size: 16px;
-
+	text-transform:	capitalize ;
 }
 
 .recentPost__info h1:hover{

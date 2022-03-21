@@ -35,10 +35,10 @@
 .category__archieve ul li{
     padding: 7px 0;
 }
-
+/* 
 .category__container ul{
     margin: 10px 0;
-}
+} */
 
 .category__post{
     margin: 45px;
@@ -69,13 +69,14 @@
     margin-top: 0;
 }
 .category__post .mostReadPost__info ul li{
-    float: left;
-    padding: 5px 10px;
+    /* float: left; */
+    padding: 5px 0px;
+}
+.category__post .mostReadPost__info ul li.course__name{
+    color: #fff !important;
+    padding: 3px 10px ;
 }
 
-.course__name{
-    color: #fff !important;
-}
 
 .category__post .mostReadPost__info h4{
     font-size: 18px;

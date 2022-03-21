@@ -12,9 +12,36 @@ const URL = 'http://localhost:8000'
         }
  }
 
- export const getAllPosts = async() => {
+ export const getRecentPosts = async() => {
      try{
-         return await axios.post(`${URL}/get_posts`)
+         return await axios.post(`${URL}/get_recent_posts`)
+        }
+        catch(error){
+            console.log('Error creating Post ', error)
+        }
+ }
+
+ export const getFeaturedPosts = async() => {
+     try{
+         return await axios.post(`${URL}/get_featured_posts`)
+        }
+        catch(error){
+            console.log('Error creating Post ', error)
+        }
+ }
+
+ export const getMostReadPosts = async() => {
+     try{
+         return await axios.post(`${URL}/get_most_read_posts`)
+        }
+        catch(error){
+            console.log('Error creating Post ', error)
+        }
+ }
+
+ export const getUsersPosts = async() => {
+     try{
+         return await axios.post(`${URL}/get_users_posts`)
         }
         catch(error){
             console.log('Error creating Post ', error)

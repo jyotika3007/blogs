@@ -4,11 +4,10 @@
 }
 .home__posts{
 	margin: auto;
-	display: flex;
 	justify-content: center;
-	margin-top: 25px;
+	margin-bottom: 55px;
+	margin-top: 10px;
 }
-
 
 .web__design{
 	background-color: #0fbf0f;

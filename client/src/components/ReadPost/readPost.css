@@ -13,12 +13,28 @@
 
 }
 
+.mostReadPost__info{
+	margin-left: 15px;
+}
+
+.mostReadPost__info ul{
+	list-style-type: none;
+}
+
+.mostReadPost__info ul li{
+	/* list-style-type: none; */
+	float: left;
+}
+
 .mostReadPost__info h4{
 	margin: 0!important;
-	padding: 0 10px;
-	font-weight: 400;
-	font-size: 15px;
+	/* padding: 0 10px; */
+	padding: 5px 0 ;
+	font-weight: 700;
+	/* font-weight: 400; */
+	font-size: 17px;
 	cursor: pointer;
+	text-transform:	capitalize ;
 }
 
 .mostReadPost__info h4:hover{
@@ -27,5 +43,16 @@
 
 .mostReadPost__info p{
 	text-align: justify;
-	font-size: 15px;
+	font-size: 14px;
+}
+
+.mostReadPost__info .course__name{
+	width: fit-content;
+    padding: 2px 10px;
+	font-size: 12px;;
+}
+
+.post__date{
+	font-size: 14px;
+	margin-left: 15px;
 }
