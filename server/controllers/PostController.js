@@ -13,7 +13,7 @@ export const createPost = async (req,res) => {
             response:'blog saved succesfully'
         });
     } catch(error){
-        res.status(500).jsn(error)
+        res.status(500).json(error)
     }
 }
 
@@ -28,7 +28,7 @@ export const getRecentPosts = async (req,res) => {
             data: posts
         });
     } catch(error){
-        res.status(500).jsn(error)
+        res.status(500).json(error)
     }
 }
 
@@ -43,7 +43,7 @@ export const getFeaturedPosts = async (req,res) => {
             data: posts
         });
     } catch(error){
-        res.status(500).jsn(error)
+        res.status(500).json(error)
     }
 }
 
@@ -58,7 +58,7 @@ export const getMostReadPosts = async (req,res) => {
             data: posts
         });
     } catch(error){
-        res.status(500).jsn(error)
+        res.status(500).json(error)
     }
 }
 
@@ -74,7 +74,7 @@ export const getUsersPosts = async (req,res) => {
             data: posts
         });
     } catch(error){
-        res.status(500).jsn(error)
+        res.status(500).json(error)
     }
 }
 

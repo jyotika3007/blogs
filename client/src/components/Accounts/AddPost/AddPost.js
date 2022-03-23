@@ -56,6 +56,16 @@ export default function Profile() {
                             <input type="text" name="title" onChange={e => handleChange(e)} placeholder='Enter Post Title Here ...' />
                         </div>
                         <div className='form__div'>
+                            <label>Category</label>
+                            <select name="category" onChange={e => handleChange(e)} required>
+                                <option> -- Select Category -- </option>
+                                <option value="css">CSS</option>
+                                <option value="javascript">Javascript</option>
+                                <option value="jquery">JQuery</option>
+                                <option value="web_design">Web Design</option>
+                            </select>
+                        </div>
+                        <div className='form__div'>
                             <label>#Tags</label>
                             <input type="text" name="tags" onChange={e => handleChange(e)} placeholder='Use comma (,) as a separator ...' />
                         </div>
