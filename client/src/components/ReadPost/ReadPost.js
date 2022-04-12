@@ -1,12 +1,12 @@
 import React from 'react';
 import './readPost.css';
 
-function ReadPost({post}) {
+function ReadPost({post},prop) {
 
-	console.log(post)
+	console.log( prop)
 	
 	return (
-		<div className="mostReadPost__container">
+		<div className="mostReadPost__container" onClick={prop.mostRead}>
 			<div className="mostReadPost__imageDiv">
 				<img src="/images/post1.webp" alt="Post Image" className="mostReadPost__image" />
 			</div>
@@ -24,7 +24,9 @@ function ReadPost({post}) {
 				</>
 				}
 				<h4>{post?post.title:''}</h4>
-				<p>{post?post.description:''}</p>
+				<p>
+				{ post ? post.description.slice(0, 75) + (post.description.length > 75 ? "..." : "") : ''}
+				</p>
 			</div>
 		</div>
 		)

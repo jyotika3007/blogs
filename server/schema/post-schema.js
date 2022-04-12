@@ -26,6 +26,11 @@ const PostSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    count: {
+        type: Number,
+        required: true,
+        default: 0
+    },
     created_at: {
         type: String,
         required: Date()

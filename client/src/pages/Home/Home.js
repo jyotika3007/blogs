@@ -13,6 +13,11 @@ const [recentPosts,setResentPosts] = useState([]);
 const [featuredPosts,setFeaturedPosts] = useState([]);
 const [mostReadPosts,setMostReadPosts] = useState([]);
 
+
+function setMostRead(id){
+	console.log(id)
+}
+
 useEffect(() => {
 	const fetchRecentPostData = async()=>{
 		let postData = await getRecentPosts();
@@ -126,7 +131,7 @@ useEffect(() => {
 				</div>
 				{
 					mostReadPosts.map((post) => (
-						<ReadPost post={post}/>
+						<ReadPost post={post} mostRead={setMostRead} />
 					))
 				}
 				</div>

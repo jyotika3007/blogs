@@ -3,7 +3,7 @@ import './recentPost.css';
 
 function RecentPost({post}){
 
-	console.log(post)
+	// console.log(post)
 	return(
 		<div className="recentPost__container" key={post?post._id:'1'}>
 			<div className="recentPost__images"></div>
