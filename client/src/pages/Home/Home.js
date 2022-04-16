@@ -9,7 +9,16 @@ import './home.css';
 import { getRecentPosts, getFeaturedPosts, getMostReadPosts } from '../../service/api.js';
 
 function Home(argument) {
-const [recentPosts,setResentPosts] = useState([]);
+const [css_posts,setCssPosts] = useState([]);
+const [js_posts,setJsPosts] = useState([]);
+const [jq_posts,setJqPosts] = useState([]);
+const [wd_posts,setWdPosts] = useState([]);
+
+const [css_postsCount,setCssPostsCount] = useState([]);
+const [js_postsCount,setJsPostsCount] = useState([]);
+const [jq_postsCount,setJqPostsCount] = useState([]);
+const [wd_postsCount,setWdPostsCount] = useState([]);
+
 const [featuredPosts,setFeaturedPosts] = useState([]);
 const [mostReadPosts,setMostReadPosts] = useState([]);
 
@@ -23,7 +32,11 @@ useEffect(() => {
 		let postData = await getRecentPosts();
 		// console.log(postData.data.data);
 		let data = postData.data.data
-		setResentPosts(data);
+		console.log(data)
+		setCssPosts(data.css);
+		setJsPosts(data.js);
+		setJqPosts(data.jq);
+		setWdPosts(data.wd);
 	}
 	const fetchFeaturedPostData = async()=>{
 		let postData = await getFeaturedPosts();
@@ -61,7 +74,7 @@ useEffect(() => {
 					<h2>Web Design</h2>
 				</div>
 				<div className="home__posts">
-				{recentPosts.map(post => (
+				{wd_posts.map(post => (
 					// console.log(post)
 					<React.Fragment>
 					<RecentPost post={post} key={post._id} />
@@ -78,7 +91,7 @@ useEffect(() => {
 				</div>
 				<div className="home__posts">
 					{
-						featuredPosts.map((post)=>(
+						css_posts.map((post)=>(
 							<React.Fragment>
 								<RecentPost  post={post} key={post._id} />
 							</React.Fragment>
@@ -96,7 +109,7 @@ useEffect(() => {
 				</div>
 				<div className="home__posts">
 					{
-						featuredPosts.map((post)=>(
+						js_posts.map((post)=>(
 							<React.Fragment>
 								<RecentPost  post={post} key={post._id} />
 							</React.Fragment>
@@ -114,7 +127,7 @@ useEffect(() => {
 				</div>
 				<div className="home__posts">
 					{
-						featuredPosts.map((post)=>(
+						jq_posts.map((post)=>(
 							<React.Fragment>
 								<RecentPost  post={post} key={post._id} />
 							</React.Fragment>
