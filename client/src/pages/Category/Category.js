@@ -11,8 +11,17 @@ import { getMostReadPosts } from '../../service/api.js'
 function Category(argument) {
 
     const [mostReadPosts, setMostReadPost] = useState([])
+    const [categoryPosts, setCategoryPost] = useState([])
 
     useEffect(()=>{
+
+        const fetchCategoryPosts = async() => {
+            let fetchData = await getMostReadPosts();
+            // console.log(fetchData)
+            let data = fetchData.data.data
+            setMostReadPost(data)
+        }
+
         const fetchMostReadPosts = async() => {
             let fetchData = await getMostReadPosts();
             // console.log(fetchData)
@@ -24,7 +33,6 @@ function Category(argument) {
     return (
         <div className="category">
             <Header />
-
 
             <div className="category__container">
                 <BreadCrumb page="Javascript"/>
